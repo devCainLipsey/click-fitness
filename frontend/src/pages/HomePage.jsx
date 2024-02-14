@@ -22,9 +22,9 @@ const HomePage = () => {
             <p className="text-2xl font-light mb-5">
               One stop shop for everything Fitness.
             </p>
-            <Link to={"/"}>
+            <Link to={"/mainpage"}>
               <button className="inline-flex items-center justify-center px-4 py-2 bg-white text-gray-800 font-medium rounded-lg transition duration-300 hover:bg-gray-200">
-                Your Button
+                Go to main page
               </button>
             </Link>
           </div>
