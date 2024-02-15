@@ -1,13 +1,8 @@
 import React from "react";
 import NavBar from "../components/NavBar";
+import ImageSlider from "../components/ImageSlider";
 import mp1 from "../assets/MainPageImages/Section1/mp1.jpg";
 import mp2 from "../assets/MainPageImages/Section2/mp2.jpg";
-import mp3 from "../assets/MainPageImages/Section3/mp3.jpg";
-import mp4 from "../assets/MainPageImages/Section3/mp4.jpg";
-import mp5 from "../assets/MainPageImages/Section3/mp5.jpg";
-import mp6 from "../assets/MainPageImages/Section3/mp6.jpg";
-import mp7 from "../assets/MainPageImages/Section3/mp7.jpg";
-import mp8 from "../assets/MainPageImages/Section3/mp8.jpg";
 
 const MainPage = () => {
   return (
@@ -35,8 +30,8 @@ const MainPage = () => {
         {/* Content for the second section */}
         <div className="container mx-auto text-white flex flex-col-reverse md:flex-row md:justify-between md:items-center">
           <div className="w-full md:w-1/2 md:mr-12">
-            <p className="pb-10">About Click Fitness</p>
-            <h1 className="text-4xl">Welcome!</h1>
+            <p className="text-xl pb-10">About Click Fitness</p>
+            <h1 className="text-5xl">Welcome!</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
               animi minus quibusdam perspiciatis facere tenetur perferendis
@@ -49,33 +44,16 @@ const MainPage = () => {
           </div>
         </div>
       </section>
-      <section className="min-h-screen py-12 border-t-2 border-red-500 flex justify-center items-center">
+      <section className="min-h-screen py-12 border-t-2 border-red-500 bg-black flex justify-center items-center relative">
         {/* Content for the third section */}
         <div className="container mx-auto text-center">
-          <h1 className="text-4xl pb-3">Our Programs</h1>
-          <div className="flex justify-center items-center">
-            <div className="w-1/6 mx-4">
-              <img src={mp3} alt="Program 1" className="w-full" />
-            </div>
-            <div className="w-1/6 mx-4">
-              <img src={mp4} alt="Program 2" className="w-full" />
-            </div>
-            <div className="w-1/6 mx-4">
-              <img src={mp5} alt="Program 3" className="w-full" />
-            </div>
-            <div className="w-1/6 mx-4">
-              <img src={mp6} alt="Program 4" className="w-full" />
-            </div>
-            <div className="w-1/6 mx-4">
-              <img src={mp7} alt="Program 5" className="w-full" />
-            </div>
-            <div className="w-1/6 mx-4">
-              <img src={mp8} alt="Program 6" className="w-full" />
-            </div>
-          </div>
+          <h1 className="text-5xl pb-3 mt-24 absolute top-0 left-0 right-0">
+            Our Programs
+          </h1>
+          <ImageSlider />
         </div>
       </section>
-      <section className="py-12 border-t-2 border-red-500">
+      <section className="py-12 border-t-2 border-red-500 bg-black">
         {/* Content for the fourth section */}
         <div className="container mx-auto">
           <h1>SECTION 4</h1>
