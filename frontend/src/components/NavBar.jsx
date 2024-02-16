@@ -1,6 +1,7 @@
 import React from "react";
-
-import { Link } from "react-router-dom";
+import { FaDumbbell } from "react-icons/fa";
+import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -8,25 +9,57 @@ const NavBar = () => {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center">
-          <Link to="/" className="text-white text-xl font-bold">
-            Your Logo
-          </Link>
+          <RouterLink
+            to="/"
+            className="flex items-center text-white text-xl font-bold cursor-pointer"
+          >
+            <FaDumbbell className="mr-2" size={32} />
+            Click Fitness
+          </RouterLink>
         </div>
 
         {/* Navigation Links */}
         <div className="flex items-center">
-          <a href="#section1" className="text-white mr-4 hover:text-red-600">
-            Section 1
-          </a>
-          <a href="#section2" className="text-white mr-4 hover:text-red-600">
-            Section 2
-          </a>
-          <a href="#section3" className="text-white mr-4 hover:text-red-600">
-            Section 3
-          </a>
-          <a href="#section4" className="text-white mr-4 hover:text-red-600">
-            Section 4
-          </a>
+          <Link
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            className="text-white mr-4 hover:text-red-600 cursor-pointer"
+          >
+            Home
+          </Link>
+          <Link
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={30}
+            duration={500}
+            className="text-white mr-4 hover:text-red-600 cursor-pointer"
+          >
+            About
+          </Link>
+          <Link
+            to="plans"
+            spy={true}
+            smooth={true}
+            offset={-5}
+            duration={500}
+            className="text-white mr-4 hover:text-red-600 cursor-pointer"
+          >
+            Plans
+          </Link>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="text-white mr-4 hover:text-red-600 cursor-pointer"
+          >
+            Contact
+          </Link>
         </div>
       </div>
     </nav>
