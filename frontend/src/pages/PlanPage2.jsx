@@ -1,0 +1,48 @@
+import React from "react";
+import mp4 from "../assets/MainPageImages/Section3/mp4.jpg";
+import { Link } from "react-router-dom";
+
+const PlanPage2 = () => {
+  return (
+    <>
+      <div
+        className="h-screen bg-cover bg-center flex justify-center items-center"
+        style={{ backgroundImage: `url(${mp4})` }}
+      >
+        <div className="bg-black bg-opacity-70 p-8 rounded-lg border-2 border-red-500 text-center">
+          <h1 className="text-5xl font-bold text-white mb-4">
+            Squat Mastery Program
+          </h1>
+          <p className="text-3xl text-white mb-6">
+            This advanced squat mastery program is designed for individuals
+            looking to develop exceptional lower body strength and power through
+            squats. It includes a variety of squat variations, plyometric
+            exercises, and accessory movements to enhance squat performance and
+            overall leg development.
+          </p>
+          <p className="text-3xl text-white mb-6">
+            Equipment Needed: Barbell, Squat Rack, Weight Plates, Resistance
+            Bands
+          </p>
+          <p className="text-3xl text-white mb-2">Duration: 8 weeks</p>
+          <p className="text-3xl text-white mb-2">Frequency: 3 days per week</p>
+          <p className="text-3xl text-white mb-2">
+            Intensity: Moderate to High
+          </p>
+
+          <p className="text-3xl text-white mb-2">Price: $25.00</p>
+          <Link to="/mainpage#plans">
+            <button className="mr-10 bg-slate-300 hover:bg-red-600 text-white font-bold py-2 px-4 rounded inline-block mt-4">
+              Go Back
+            </button>
+          </Link>
+          <button className="bg-slate-300 hover:bg-red-600 text-white font-bold py-2 px-4 rounded inline-block mt-4">
+            Buy Plan
+          </button>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default PlanPage2;

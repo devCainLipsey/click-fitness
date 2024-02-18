@@ -8,6 +8,7 @@ import mp5 from "../assets/MainPageImages/Section3/mp5.jpg";
 import mp6 from "../assets/MainPageImages/Section3/mp6.jpg";
 import mp7 from "../assets/MainPageImages/Section3/mp7.jpg";
 import mp8 from "../assets/MainPageImages/Section3/mp8.jpg";
+import { Link } from "react-router-dom";
 
 // SVG icon for previous arrow
 const PrevArrow = (props) => (
@@ -18,6 +19,10 @@ const PrevArrow = (props) => (
     viewBox="0 0 24 24"
     stroke="currentColor"
     onClick={props.onClick}
+    style={{ transition: "color 0.3s" }}
+    // Hover effect
+    onMouseEnter={(e) => e.target.setAttribute("stroke", "#EF4444")}
+    onMouseLeave={(e) => e.target.setAttribute("stroke", "currentColor")}
   >
     <path
       strokeLinecap="round"
@@ -37,6 +42,10 @@ const NextArrow = (props) => (
     viewBox="0 0 24 24"
     stroke="currentColor"
     onClick={props.onClick}
+    style={{ transition: "color 0.3s" }}
+    // Hover effect
+    onMouseEnter={(e) => e.target.setAttribute("stroke", "#EF4444")}
+    onMouseLeave={(e) => e.target.setAttribute("stroke", "currentColor")}
   >
     <path
       strokeLinecap="round"
@@ -87,11 +96,12 @@ const ImageSlider = () => {
           <img src={mp3} alt="Program 1" className="h-96 object-cover" />
         </div>
         <div className="absolute bottom-0 left-0 right-0 bg-black -p-6">
-          <h3 className="text-xl font-bold">Plan 1</h3>
-          <p className="text-gray-700">Description of Plan 1</p>
-          <button className="mt-2 bg-slate-300 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
-            Details
-          </button>
+          <h3 className="text-2xl font-bold">Advanced Strength Training</h3>
+          <Link to="/planpage1">
+            <button className="mt-2 bg-slate-300 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
+              Details
+            </button>
+          </Link>
         </div>
       </div>
       <div className="relative">
@@ -99,11 +109,12 @@ const ImageSlider = () => {
           <img src={mp4} alt="Program 2" className="h-96 object-cover" />
         </div>
         <div className="absolute bottom-0 left-0 right-0 bg-black -p-6">
-          <h3 className="text-xl font-bold">Plan 2</h3>
-          <p className="text-gray-700">Description of Plan 2</p>
-          <button className="mt-2 bg-slate-300 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
-            Details
-          </button>
+          <h3 className="text-2xl font-bold">Squat Mastery Program</h3>
+          <Link to="/planpage2">
+            <button className="mt-2 bg-slate-300 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
+              Details
+            </button>
+          </Link>
         </div>
       </div>
       <div className="relative">
@@ -111,11 +122,12 @@ const ImageSlider = () => {
           <img src={mp5} alt="Program 3" className="h-96 object-cover" />
         </div>
         <div className="absolute bottom-0 left-0 right-0 bg-black -p-6">
-          <h3 className="text-xl font-bold">Plan 3</h3>
-          <p className="text-gray-700">Description of Plan 3</p>
-          <button className="mt-2 bg-slate-300 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
-            Details
-          </button>
+          <h3 className="text-2xl font-bold">Cable Training Program</h3>
+          <Link to="/planpage3">
+            <button className="mt-2 bg-slate-300 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
+              Details
+            </button>
+          </Link>
         </div>
       </div>
       <div className="relative">
@@ -123,11 +135,12 @@ const ImageSlider = () => {
           <img src={mp6} alt="Program 4" className="h-96 object-cover" />
         </div>
         <div className="absolute bottom-0 left-0 right-0 bg-black -p-6">
-          <h3 className="text-xl font-bold">Plan 4</h3>
-          <p className="text-gray-700">Description of Plan 4</p>
-          <button className="mt-2 bg-slate-300 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
-            Details
-          </button>
+          <h3 className="text-2xl font-bold">Bodyweight Strength Program</h3>
+          <Link to="/planpage4">
+            <button className="mt-2 bg-slate-300 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
+              Details
+            </button>
+          </Link>
         </div>
       </div>
       <div className="relative">
@@ -135,11 +148,12 @@ const ImageSlider = () => {
           <img src={mp7} alt="Program 5" className="h-96 object-cover" />
         </div>
         <div className="absolute bottom-0 left-0 right-0 bg-black -p-6">
-          <h3 className="text-xl font-bold">Plan 5</h3>
-          <p className="text-gray-700">Description of Plan 5</p>
-          <button className="mt-2 bg-slate-300 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
-            Details
-          </button>
+          <h3 className="text-2xl font-bold">Outdoor Adventure Training</h3>
+          <Link to="/planpage5">
+            <button className="mt-2 bg-slate-300 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
+              Details
+            </button>
+          </Link>
         </div>
       </div>
       <div className="relative">
@@ -147,11 +161,12 @@ const ImageSlider = () => {
           <img src={mp8} alt="Program 6" className="h-96 object-cover" />
         </div>
         <div className="absolute bottom-0 left-0 right-0 bg-black -p-6">
-          <h3 className="text-xl font-bold">Plan 6</h3>
-          <p className="text-gray-700">Description of Plan 6</p>
-          <button className="mt-2 bg-slate-300 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
-            Details
-          </button>
+          <h3 className="text-2xl font-bold">Personal Trainer Program</h3>
+          <Link to="/planpage6">
+            <button className="mt-2 bg-slate-300 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
+              Details
+            </button>
+          </Link>
         </div>
       </div>
     </Slider>

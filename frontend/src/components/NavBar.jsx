@@ -32,15 +32,15 @@ const NavBar = () => {
         <div className="flex items-center">
           <RouterLink
             to="/"
-            className="flex items-center text-white text-xl font-bold cursor-pointer"
+            className="flex items-center text-white text-3xl font-bold cursor-pointer"
           >
-            <FaDumbbell className="mr-2" size={32} />
+            <FaDumbbell className="mr-2" size={40} />
             Click Fitness
           </RouterLink>
         </div>
 
         {/* Navigation Links */}
-        <div className="flex items-center">
+        <div className="flex items-center text-xl">
           <Link
             to="home"
             spy={true}
@@ -55,7 +55,7 @@ const NavBar = () => {
             to="about"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-60}
             duration={500}
             className="text-white mr-4 hover:text-red-600 cursor-pointer"
           >
@@ -65,7 +65,7 @@ const NavBar = () => {
             to="plans"
             spy={true}
             smooth={true}
-            offset={-50}
+            offset={-70}
             duration={500}
             className="text-white mr-4 hover:text-red-600 cursor-pointer"
           >
@@ -75,7 +75,7 @@ const NavBar = () => {
             to="contact"
             spy={true}
             smooth={true}
-            offset={50}
+            offset={0}
             duration={500}
             className="text-white mr-4 hover:text-red-600 cursor-pointer"
           >

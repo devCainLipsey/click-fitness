@@ -12,7 +12,7 @@ const MainPage = () => {
       <NavBar />
       <section className="relative min-h-screen" id="home">
         <div
-          className="absolute inset-0 bg-black opacity-50"
+          className="absolute inset-0 bg-black opacity-90"
           style={{
             backgroundImage: `url(${mp1})`,
             backgroundSize: "cover",
@@ -21,8 +21,8 @@ const MainPage = () => {
         ></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-white text-center">
-            <h1 className="text-4xl md:text-6xl font-bold">Build your Body!</h1>
-            <p className="mt-4 text-lg md:text-xl">
+            <h1 className="text-6xl md:text-6xl font-bold">Build your Body!</h1>
+            <p className="mt-4 text-2xl md:text-2xl">
               Some description about your app
             </p>
           </div>
@@ -33,19 +33,26 @@ const MainPage = () => {
         id="about"
       >
         {/* Content for the second section */}
-        <div className="container mx-auto text-white flex flex-col-reverse md:flex-row md:justify-between md:items-center">
-          <div className="w-full md:w-1/2 md:mr-12">
-            <p className="text-xl pb-10">About Click Fitness</p>
-            <h1 className="text-5xl">Welcome!</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-              animi minus quibusdam perspiciatis facere tenetur perferendis
-              expedita nihil! Magni nihil accusamus velit rerum corrupti minus
-              ipsam alias delectus sapiente eveniet?
-            </p>
+        <div className="container mx-auto flex flex-col md:flex-row items-center">
+          <div className="md:w-1/2 md:pr-8">
+            <div className="text-white text-center md:text-left">
+              <h1 className="text-4xl md:text-6xl font-bold">
+                About Click Fitness
+              </h1>
+              <p className="mt-4 text-lg md:text-xl">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
           </div>
-          <div className="w-full md:w-1/2">
-            <img src={mp2} alt="Image" className="w-full" />
+          <div className="md:w-1/2">
+            <img
+              src={mp2}
+              alt="About Click Fitness"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </section>
@@ -55,7 +62,7 @@ const MainPage = () => {
       >
         {/* Content for the third section */}
         <div className="container mx-auto text-center">
-          <h1 className="text-5xl pb-3 mt-24 absolute top-0 left-0 right-0">
+          <h1 className="text-6xl font-bold pb-3 mt-24 absolute top-0 left-0 right-0">
             Our Programs
           </h1>
           <ImageSlider />
