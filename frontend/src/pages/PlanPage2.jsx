@@ -32,11 +32,11 @@ const PlanPage2 = () => {
 
           <p className="text-3xl text-white mb-2">Price: $25.00</p>
           <Link to="/mainpage#plans">
-            <button className="mr-10 bg-slate-300 hover:bg-red-600 text-white font-bold py-2 px-4 rounded inline-block mt-4">
+            <button className="mr-10 bg-slate-700 hover:bg-red-600 text-white text-xl  font-bold py-3 px-6 rounded inline-block mt-4 transition duration-200">
               Go Back
             </button>
           </Link>
-          <button className="bg-slate-300 hover:bg-red-600 text-white font-bold py-2 px-4 rounded inline-block mt-4">
+          <button className="bg-slate-700 hover:bg-red-600 text-white text-xl  font-bold py-3 px-6 rounded inline-block mt-4 transition duration-200">
             Buy Plan
           </button>
         </div>

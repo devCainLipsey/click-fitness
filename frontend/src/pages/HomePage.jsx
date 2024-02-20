@@ -19,11 +19,11 @@ const HomePage = () => {
             <h1 className="text-6xl font-bold mb-5">
               Welcome to Click Fitness!
             </h1>
-            <p className="text-3xl font-light mb-5">
+            <p className="text-3xl font-bold mb-5">
               One stop shop for everything Fitness.
             </p>
             <Link to={"/mainpage"}>
-              <button className="text-lg inline-flex items-center justify-center px-4 py-2 bg-white text-gray-800 font-medium rounded-lg transition duration-300 hover:bg-gray-200">
+              <button className="text-xl inline-flex items-center justify-center px-4 py-2 bg-slate-700 text-white font-medium rounded-lg transition duration-200 hover:bg-red-500">
                 Go to main page
               </button>
             </Link>

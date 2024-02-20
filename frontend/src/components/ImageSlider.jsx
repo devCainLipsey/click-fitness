@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 const PrevArrow = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className={`h-12 w-12 text-white cursor-pointer absolute top-1/2 -left-28 transform -translate-y-1/2 z-10 ${props.className}`}
+    className={`h-20  w-20 text-white cursor-pointer absolute  top-52 -left-32 transform -translate-y-1/2 z-10 ${props.className}`}
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
@@ -37,7 +37,7 @@ const PrevArrow = (props) => (
 const NextArrow = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className={`h-12 w-12 text-white cursor-pointer absolute top-1/2 -right-28 transform -translate-y-1/2 z-10 ${props.className}`}
+    className={`h-20  w-20 text-white cursor-pointer absolute top-52 -right-32 transform -translate-y-1/2 z-10 ${props.className}`}
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
@@ -59,9 +59,9 @@ const NextArrow = (props) => (
 const ImageSlider = () => {
   const settings = {
     infinite: true,
-    speed: 500,
+    speed: 900,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
     responsive: [
@@ -95,10 +95,10 @@ const ImageSlider = () => {
         <div className="mb-4">
           <img src={mp3} alt="Program 1" className="h-96 object-cover" />
         </div>
-        <div className="absolute bottom-0 left-0 right-0 bg-black -p-6">
-          <h3 className="text-2xl font-bold">Advanced Strength Training</h3>
+        <div className="bg-black">
+          <h3 className="text-4xl font-bold">Advanced Strength</h3>
           <Link to="/planpage1">
-            <button className="mt-2 bg-slate-300 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
+            <button className="mt-6 bg-slate-700 hover:bg-red-600 text-white text-xl font-bold py-3 px-6 rounded transition duration-200">
               Details
             </button>
           </Link>
@@ -108,10 +108,10 @@ const ImageSlider = () => {
         <div className="mb-4">
           <img src={mp4} alt="Program 2" className="h-96 object-cover" />
         </div>
-        <div className="absolute bottom-0 left-0 right-0 bg-black -p-6">
-          <h3 className="text-2xl font-bold">Squat Mastery Program</h3>
+        <div className=" bg-black">
+          <h3 className="text-4xl font-bold">Squat Mastery</h3>
           <Link to="/planpage2">
-            <button className="mt-2 bg-slate-300 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
+            <button className="mt-6 bg-slate-700 hover:bg-red-600 text-white text-xl font-bold py-3 px-6 rounded transition duration-200">
               Details
             </button>
           </Link>
@@ -121,10 +121,10 @@ const ImageSlider = () => {
         <div className="mb-4">
           <img src={mp5} alt="Program 3" className="h-96 object-cover" />
         </div>
-        <div className="absolute bottom-0 left-0 right-0 bg-black -p-6">
-          <h3 className="text-2xl font-bold">Cable Training Program</h3>
+        <div className="bg-black ">
+          <h3 className="text-4xl font-bold">Cable Training</h3>
           <Link to="/planpage3">
-            <button className="mt-2 bg-slate-300 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
+            <button className="mt-6 bg-slate-700 hover:bg-red-600 text-white text-xl font-bold py-3 px-6 rounded transition duration-200">
               Details
             </button>
           </Link>
@@ -134,10 +134,10 @@ const ImageSlider = () => {
         <div className="mb-4">
           <img src={mp6} alt="Program 4" className="h-96 object-cover" />
         </div>
-        <div className="absolute bottom-0 left-0 right-0 bg-black -p-6">
-          <h3 className="text-2xl font-bold">Bodyweight Strength Program</h3>
+        <div className="bg-black ">
+          <h3 className="text-4xl font-bold">Bodyweight Strength</h3>
           <Link to="/planpage4">
-            <button className="mt-2 bg-slate-300 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
+            <button className="mt-6 bg-slate-700 hover:bg-red-600 text-white text-xl font-bold py-3 px-6 rounded transition duration-200">
               Details
             </button>
           </Link>
@@ -147,10 +147,10 @@ const ImageSlider = () => {
         <div className="mb-4">
           <img src={mp7} alt="Program 5" className="h-96 object-cover" />
         </div>
-        <div className="absolute bottom-0 left-0 right-0 bg-black -p-6">
-          <h3 className="text-2xl font-bold">Outdoor Adventure Training</h3>
+        <div className="bg-black ">
+          <h3 className="text-4xl font-bold">Outdoor Adventure Training</h3>
           <Link to="/planpage5">
-            <button className="mt-2 bg-slate-300 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
+            <button className="mt-6 bg-slate-700 hover:bg-red-600 text-white text-xl font-bold py-3 px-6 rounded transition duration-200">
               Details
             </button>
           </Link>
@@ -160,10 +160,10 @@ const ImageSlider = () => {
         <div className="mb-4">
           <img src={mp8} alt="Program 6" className="h-96 object-cover" />
         </div>
-        <div className="absolute bottom-0 left-0 right-0 bg-black -p-6">
-          <h3 className="text-2xl font-bold">Personal Trainer Program</h3>
+        <div className="bg-black ">
+          <h3 className="text-4xl font-bold">Personal Trainer</h3>
           <Link to="/planpage6">
-            <button className="mt-2 bg-slate-300 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
+            <button className="mt-6 bg-slate-700 hover:bg-red-600 text-white text-xl font-bold py-3 px-6 rounded transition duration-200">
               Details
             </button>
           </Link>

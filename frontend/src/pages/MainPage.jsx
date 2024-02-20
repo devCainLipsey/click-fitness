@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import NavBar from "../components/NavBar";
 import ImageSlider from "../components/ImageSlider";
 import ContactForm from "../components/ContactForm";
@@ -12,19 +13,30 @@ const MainPage = () => {
       <NavBar />
       <section className="relative min-h-screen" id="home">
         <div
-          className="absolute inset-0 bg-black opacity-90"
+          className="absolute inset-0 bg-black opacity-100"
           style={{
             backgroundImage: `url(${mp1})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         ></div>
-        <div className="absolute inset-0 flex items-center justify-center">
+        <div className="absolute inset-0 flex items-center justify-start    ml-36 mt-60">
           <div className="text-white text-center">
-            <h1 className="text-6xl md:text-6xl font-bold">Build your Body!</h1>
-            <p className="mt-4 text-2xl md:text-2xl">
-              Some description about your app
+            <h1 className=" text-8xl md:text-8xl font-bold">Build your Body</h1>
+            <p className="mt-6 text-3xl md:text-3xl">
+              Achieve your goals to a stronger, healthier you!
             </p>
+            <Link
+              to="plans"
+              spy={true}
+              smooth={true}
+              offset={-80}
+              duration={700}
+            >
+              <button className="mt-8 border-2 border-red-500 bg-black text-white  text-2xl font-bold py-4 px-8 rounded-xl hover:bg-red-700 hover:border-gray-950 transition duration-200">
+                Check out our Plans
+              </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -40,10 +52,15 @@ const MainPage = () => {
                 About Click Fitness
               </h1>
               <p className="mt-4 text-lg md:text-xl">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Welcome to Click Fitness, your ultimate destination for building
+                a stronger, healthier you! Our app provides a comprehensive
+                platform designed to empower you on your fitness journey.
+                Whether you're a beginner or a seasoned fitness enthusiast, we
+                offer personalized programs tailored to your goals and
+                preferences. Explore our wide range of programs, from strength
+                training to outdoor adventures, and take the first step towards
+                a fitter, happier lifestyle. Join us today and start sculpting
+                the body you've always dreamed of!
               </p>
             </div>
           </div>

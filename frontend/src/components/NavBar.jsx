@@ -46,7 +46,7 @@ const NavBar = () => {
             spy={true}
             smooth={true}
             offset={0}
-            duration={500}
+            duration={700}
             className="text-white mr-4 hover:text-red-600 cursor-pointer"
           >
             Home
@@ -56,7 +56,7 @@ const NavBar = () => {
             spy={true}
             smooth={true}
             offset={-60}
-            duration={500}
+            duration={700}
             className="text-white mr-4 hover:text-red-600 cursor-pointer"
           >
             About
@@ -65,8 +65,8 @@ const NavBar = () => {
             to="plans"
             spy={true}
             smooth={true}
-            offset={-70}
-            duration={500}
+            offset={-80}
+            duration={700}
             className="text-white mr-4 hover:text-red-600 cursor-pointer"
           >
             Plans
@@ -76,7 +76,7 @@ const NavBar = () => {
             spy={true}
             smooth={true}
             offset={0}
-            duration={500}
+            duration={700}
             className="text-white mr-4 hover:text-red-600 cursor-pointer"
           >
             Contact

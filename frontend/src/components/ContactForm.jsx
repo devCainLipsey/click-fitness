@@ -12,11 +12,11 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="max-w-lg mx-auto bg-white bg-opacity-75 shadow-md rounded px-8 pt-6 pb-8 mb-4 border-2 border-red-500">
+    <div className="max-w-lg mx-auto bg-black bg-opacity-75 shadow-md rounded px-8 pt-6 pb-8 mb-4 border-2 border-red-500">
       <h2 className="text-6xl text-center font-bold mb-4">Contact Us</h2>
       <div className="mb-4">
         <label
-          className="block text-gray-700 text-lg font-bold mb-2"
+          className="block text-white text-lg font-bold mb-2"
           htmlFor="name"
         >
           Name:
@@ -33,7 +33,7 @@ const ContactForm = () => {
       </div>
       <div className="mb-4">
         <label
-          className="block text-gray-700 text-lg font-bold mb-2"
+          className="block text-white text-lg font-bold mb-2"
           htmlFor="email"
         >
           Email:
@@ -50,7 +50,7 @@ const ContactForm = () => {
       </div>
       <div className="mb-6">
         <label
-          className="block text-gray-700 text-lg font-bold mb-2"
+          className="block text-white text-lg font-bold mb-2"
           htmlFor="message"
         >
           Message:
@@ -67,7 +67,7 @@ const ContactForm = () => {
       </div>
       <div className="flex items-center justify-center">
         <button
-          className="bg-slate-300 hover:bg-red-600 text-white text-lg font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          className="bg-slate-700 hover:bg-red-600 text-white text-lg font-bold focus:outline-none focus:shadow-outline py-3 px-6 rounded inline-block mt-4 transition duration-200"
           type="button"
         >
           Submit
