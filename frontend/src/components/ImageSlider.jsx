@@ -97,7 +97,7 @@ const ImageSlider = () => {
         </div>
         <div className="bg-black">
           <h3 className="text-4xl font-bold">Advanced Strength</h3>
-          <Link to="/planpage1">
+          <Link to="/programpage1">
             <button className="mt-6 bg-slate-700 hover:bg-red-600 text-white text-xl font-bold py-3 px-6 rounded transition duration-200">
               Details
             </button>
@@ -110,7 +110,7 @@ const ImageSlider = () => {
         </div>
         <div className=" bg-black">
           <h3 className="text-4xl font-bold">Squat Mastery</h3>
-          <Link to="/planpage2">
+          <Link to="/programpage2">
             <button className="mt-6 bg-slate-700 hover:bg-red-600 text-white text-xl font-bold py-3 px-6 rounded transition duration-200">
               Details
             </button>
@@ -123,7 +123,7 @@ const ImageSlider = () => {
         </div>
         <div className="bg-black ">
           <h3 className="text-4xl font-bold">Cable Training</h3>
-          <Link to="/planpage3">
+          <Link to="/programpage3">
             <button className="mt-6 bg-slate-700 hover:bg-red-600 text-white text-xl font-bold py-3 px-6 rounded transition duration-200">
               Details
             </button>
@@ -136,7 +136,7 @@ const ImageSlider = () => {
         </div>
         <div className="bg-black ">
           <h3 className="text-4xl font-bold">Bodyweight Strength</h3>
-          <Link to="/planpage4">
+          <Link to="/programpage4">
             <button className="mt-6 bg-slate-700 hover:bg-red-600 text-white text-xl font-bold py-3 px-6 rounded transition duration-200">
               Details
             </button>
@@ -149,7 +149,7 @@ const ImageSlider = () => {
         </div>
         <div className="bg-black ">
           <h3 className="text-4xl font-bold">Outdoor Adventure Training</h3>
-          <Link to="/planpage5">
+          <Link to="/programpage5">
             <button className="mt-6 bg-slate-700 hover:bg-red-600 text-white text-xl font-bold py-3 px-6 rounded transition duration-200">
               Details
             </button>
@@ -162,7 +162,7 @@ const ImageSlider = () => {
         </div>
         <div className="bg-black ">
           <h3 className="text-4xl font-bold">Personal Trainer</h3>
-          <Link to="/planpage6">
+          <Link to="/programpage6">
             <button className="mt-6 bg-slate-700 hover:bg-red-600 text-white text-xl font-bold py-3 px-6 rounded transition duration-200">
               Details
             </button>
