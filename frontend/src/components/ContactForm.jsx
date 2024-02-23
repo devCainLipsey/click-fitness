@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import {
+  ContactOverlayModule,
+  ContactInputModule,
+} from "./ContactOverlayModule";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -6,9 +10,28 @@ const ContactForm = () => {
     email: "",
     message: "",
   });
+  const [showOverlay, setShowOverlay] = useState(false);
+  const [showInputModule, setShowInputModule] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = () => {
+    // Check if all fields are filled out
+    if (formData.name && formData.email && formData.message) {
+      setShowOverlay(true);
+    } else {
+      setShowInputModule(true);
+    }
+  };
+
+  const handleCloseOverlay = () => {
+    setShowOverlay(false);
+  };
+
+  const handleCloseInputModule = () => {
+    setShowInputModule(false);
   };
 
   return (
@@ -22,13 +45,16 @@ const ContactForm = () => {
           Name:
         </label>
         <input
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
+            formData.name ? "border-green-500" : "border-red-500"
+          }`}
           id="name"
           name="name"
           type="text"
           placeholder="Your Name"
           value={formData.name}
           onChange={handleChange}
+          required
         />
       </div>
       <div className="mb-4">
@@ -39,13 +65,16 @@ const ContactForm = () => {
           Email:
         </label>
         <input
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
+            formData.email ? "border-green-500" : "border-red-500"
+          }`}
           id="email"
           name="email"
           type="email"
           placeholder="Your Email"
           value={formData.email}
           onChange={handleChange}
+          required
         />
       </div>
       <div className="mb-6">
@@ -56,23 +85,31 @@ const ContactForm = () => {
           Message:
         </label>
         <textarea
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
+            formData.message ? "border-green-500" : "border-red-500"
+          }`}
           id="message"
           name="message"
           placeholder="Your Message"
           value={formData.message}
           onChange={handleChange}
           rows={4}
+          required
         />
       </div>
       <div className="flex items-center justify-center">
         <button
           className="bg-slate-700 hover:bg-red-600 text-white text-lg font-bold focus:outline-none focus:shadow-outline py-3 px-6 rounded inline-block mt-4 transition duration-200"
           type="button"
+          onClick={handleSubmit}
         >
           Submit
         </button>
       </div>
+      {showOverlay && <ContactOverlayModule onClose={handleCloseOverlay} />}
+      {showInputModule && (
+        <ContactInputModule onClose={handleCloseInputModule} />
+      )}
     </div>
   );
 };

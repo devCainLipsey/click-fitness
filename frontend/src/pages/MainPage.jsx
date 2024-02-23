@@ -98,10 +98,10 @@ const MainPage = () => {
         <div className="container mx-auto flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 md:pr-8">
             <div className="text-white text-center md:text-left">
-              <h1 className="text-4xl md:text-6xl font-bold">
+              <h1 className="text-6xl md:text-6xl font-bold">
                 About Click Fitness
               </h1>
-              <p className="mt-4 text-lg md:text-xl">
+              <p className="mt-4 text-lg sm:mb-6 md:text-xl">
                 Welcome to Click Fitness, your ultimate destination for building
                 a stronger, healthier you! Our app provides a comprehensive
                 platform designed to empower you on your fitness journey.

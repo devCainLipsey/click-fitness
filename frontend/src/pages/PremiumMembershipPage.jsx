@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import MembershipTable from "../components/MembershipTable";
-import OverlayModule from "../components/OverlayModule";
+import ConfirmOverlayModule from "../components/ConfirmOverlayModule";
 
 const PremiumMembershipPage = () => {
   const [showConfirmation, setShowConfirmation] = useState(false);
@@ -58,7 +58,7 @@ const PremiumMembershipPage = () => {
       >
         Buy Premium Plan
       </button>
-      <OverlayModule
+      <ConfirmOverlayModule
         show={showConfirmation}
         onConfirmPurchase={handleConfirmPurchase}
         onCancel={handleCancelPurchase}

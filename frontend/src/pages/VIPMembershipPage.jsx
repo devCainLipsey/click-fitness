@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import MembershipTable from "../components/MembershipTable";
-import OverlayModule from "../components/OverlayModule";
+import ConfirmOverlayModule from "../components/ConfirmOverlayModule";
 
 const VIPMembershipPage = () => {
   const [showConfirmation, setShowConfirmation] = useState(false);
@@ -61,7 +61,7 @@ const VIPMembershipPage = () => {
       >
         Buy VIP Plan
       </button>
-      <OverlayModule
+      <ConfirmOverlayModule
         show={showConfirmation}
         onConfirmPurchase={handleConfirmPurchase}
         onCancel={handleCancelPurchase}

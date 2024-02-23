@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import mp8 from "../assets/MainPageImages/Section3/mp8.jpg";
 import { Link } from "react-router-dom";
-import OverlayModule from "../components/OverlayModule";
+import ConfirmOverlayModule from "../components/ConfirmOverlayModule";
 
 const PlanPage6 = () => {
   const [showConfirmation, setShowConfirmation] = useState(false);
@@ -53,7 +53,7 @@ const PlanPage6 = () => {
           >
             Buy Plan
           </button>
-          <OverlayModule
+          <ConfirmOverlayModule
             show={showConfirmation}
             onConfirmPurchase={handleConfirmPurchase}
             onCancel={handleCancelPurchase}
