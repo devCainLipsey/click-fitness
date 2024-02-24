@@ -27,7 +27,7 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`py-4 border-b-2 border-red-600 ${
+      className={`py-4 border-b-4 border-red-600 ${
         isSticky
           ? "fixed top-0 inset-x-0 bg-black z-50 transition-all duration-300 ease-in-out"
           : "bg-black"
@@ -61,7 +61,7 @@ const NavBar = () => {
                 to="home"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={20}
                 duration={800}
                 className="text-white py-4 hover:text-red-600 cursor-pointer"
                 onClick={handleLinkClick}

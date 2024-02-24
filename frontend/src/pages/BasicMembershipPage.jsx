@@ -43,7 +43,7 @@ const BasicMembershipPage = () => {
   };
 
   return (
-    <section className="min-h-screen py-12 border-t-2 border-red-500 bg-black relative flex flex-col items-center">
+    <section className="min-h-screen py-12 border-t-4 border-red-500 bg-black relative flex flex-col items-center">
       <h1 className="text-6xl text-center font-bold pb-3 mt-6">
         <span className="text-blue-400">Basic</span> Membership
       </h1>

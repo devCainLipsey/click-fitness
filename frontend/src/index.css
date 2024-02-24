@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Raleway:wght@100&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,6 +12,22 @@ body {
 body {
   min-height: 100vh;
   height: auto;
-
   color: white;
+  font-family: "Manrope", sans-serif; /* Use 'Manrope' as the primary font */
+}
+
+/* Apply custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 12px; /* Set the width of the scrollbar */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: red; /* Set the color of the scrollbar thumb */
+  border-radius: 10px; /* Set the border radius to make it rounded */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; /* Set the background color of the scrollbar track */
 }

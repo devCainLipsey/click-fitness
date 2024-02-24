@@ -91,7 +91,7 @@ const MainPage = () => {
         </div>
       </section>
       <section
-        className="min-h-screen flex justify-end items-center py-12 border-t-2 border-red-500 bg-black"
+        className="min-h-screen flex justify-end items-center py-12 border-t-4 border-red-500 bg-black"
         id="about"
       >
         {/* Content for the 2nd section */}
@@ -124,7 +124,7 @@ const MainPage = () => {
         </div>
       </section>
       <section
-        className="min-h-screen py-12 border-t-2 border-red-500 bg-black flex justify-center items-center relative"
+        className="min-h-screen py-12 border-t-4 border-red-500 bg-black flex justify-center items-center relative"
         id="programs"
       >
         {/* Content for the 3rd section */}
@@ -137,7 +137,7 @@ const MainPage = () => {
       </section>
 
       <section
-        className="min-h-screen py-12 border-t-2 border-red-500 bg-black relative flex flex-col justify-center items-center"
+        className="min-h-screen py-12 border-t-4 border-red-500 bg-black relative flex flex-col justify-center items-center"
         id="plans"
       >
         {/* Content for the 4th section */}
@@ -154,12 +154,12 @@ const MainPage = () => {
       </section>
 
       <section
-        className="flex justify-center items-center min-h-screen py-12 border-t-2 border-red-500 bg-black"
+        className="flex justify-center items-center min-h-screen py-12 border-t-4 border-red-500 bg-black"
         style={{ backgroundImage: `url(${mp9})`, backgroundSize: "cover" }}
         id="contact"
       >
         {/* Content for the 5th section */}
-        <div className="container mx-auto ">
+        <div className="container mx-auto">
           <ContactForm />
         </div>
       </section>

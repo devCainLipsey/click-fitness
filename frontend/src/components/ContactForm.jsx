@@ -35,17 +35,17 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="max-w-lg mx-auto bg-black bg-opacity-75 shadow-md rounded px-8 pt-6 pb-8 mb-4 border-2 border-red-500">
+    <div className=" h-screen  md:h-full md:max-w-lg mx-auto bg-black bg-opacity-75 shadow-md rounded px-8 pt-6 pb-8 mb-4 border-2 border-red-500">
       <h2 className="text-6xl text-center font-bold mb-4">Contact Us</h2>
       <div className="mb-4">
         <label
-          className="block text-white text-lg font-bold mb-2"
+          className="block text-white text-3xl font-bold mb-2 md:text-lg"
           htmlFor="name"
         >
           Name:
         </label>
         <input
-          className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
+          className={`shadow appearance-none border rounded w-full  h-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline md:h-10  ${
             formData.name ? "border-green-500" : "border-red-500"
           }`}
           id="name"
@@ -59,13 +59,13 @@ const ContactForm = () => {
       </div>
       <div className="mb-4">
         <label
-          className="block text-white text-lg font-bold mb-2"
+          className="block text-white text-3xl font-bold mb-2 md:text-lg"
           htmlFor="email"
         >
           Email:
         </label>
         <input
-          className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
+          className={`shadow appearance-none border rounded w-full  h-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline md:h-10 ${
             formData.email ? "border-green-500" : "border-red-500"
           }`}
           id="email"
@@ -79,13 +79,13 @@ const ContactForm = () => {
       </div>
       <div className="mb-6">
         <label
-          className="block text-white text-lg font-bold mb-2"
+          className="block text-white text-3xl font-bold mb-2 md:text-lg"
           htmlFor="message"
         >
           Message:
         </label>
         <textarea
-          className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
+          className={`shadow appearance-none border rounded w-full h-64 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline md:h-10 ${
             formData.message ? "border-green-500" : "border-red-500"
           }`}
           id="message"
@@ -99,7 +99,7 @@ const ContactForm = () => {
       </div>
       <div className="flex items-center justify-center">
         <button
-          className="bg-slate-700 hover:bg-red-600 text-white text-lg font-bold focus:outline-none focus:shadow-outline py-3 px-6 rounded inline-block mt-4 transition duration-200"
+          className="h-40 w-full bg-slate-700 hover:bg-red-600 text-white text-4xl font-bold focus:outline-none focus:shadow-outline py-3 px-6 rounded inline-block mt-4 transition duration-200 md:text-lg md:h-14 md:w-32"
           type="button"
           onClick={handleSubmit}
         >

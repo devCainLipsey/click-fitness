@@ -13,24 +13,28 @@ const MembershipTable = ({ plan, features, price, programs }) => {
         >
           <thead>
             <tr className="bg-red-500 text-white text-2xl">
-              <th className="py-10 px-12 border border-red-500">
+              <th className="py-10 px-12 border-2 border-red-500">
                 Membership Plan
               </th>
-              <th className="py-10 px-12 border border-red-500">
+              <th className="py-10 px-12 border-2 border-red-500">
                 Special Features
               </th>
-              <th className="py-10 px-12 border border-red-500">Price</th>
-              <th className="py-10 px-12 border border-red-500">
+              <th className="py-10 px-12 border-2 border-red-500">Price</th>
+              <th className="py-10 px-12 border-2 border-red-500">
                 Programs Offered
               </th>
             </tr>
           </thead>
           <tbody>
             <tr className="bg-black">
-              <td className="py-10 px-12 border border-red-500">{plan}</td>
-              <td className="py-10 px-12 border border-red-500">{features}</td>
-              <td className="py-10 px-12 border border-red-500">{price}</td>
-              <td className="py-10 px-12 border border-red-500">{programs}</td>
+              <td className="py-10 px-12 border-2 border-red-500">{plan}</td>
+              <td className="py-10 px-12 border-2 border-red-500">
+                {features}
+              </td>
+              <td className="py-10 px-12 border-2 border-red-500">{price}</td>
+              <td className="py-10 px-12 border-2 border-red-500">
+                {programs}
+              </td>
             </tr>
           </tbody>
         </table>
