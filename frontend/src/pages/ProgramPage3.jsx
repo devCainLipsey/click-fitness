@@ -45,11 +45,7 @@ const PlanPage3 = () => {
             Intensity: Moderate to High
           </p>
           <p className="text-3xl text-white mb-2">Price: $35.00</p>
-          <Link to="/mainpage#plans">
-            <button className="mr-10 bg-slate-700 hover:bg-red-600 text-white text-xl  font-bold py-3 px-6 rounded inline-block mt-4 transition duration-200">
-              Go Back
-            </button>
-          </Link>
+
           <button
             className="bg-slate-700 hover:bg-red-600 text-white text-xl  font-bold py-3 px-6 rounded inline-block mt-4 transition duration-200"
             onClick={() => setShowConfirmation(true)}

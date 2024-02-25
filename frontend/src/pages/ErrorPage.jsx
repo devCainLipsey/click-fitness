@@ -13,7 +13,7 @@ const ErrorPage = () => {
           <p className="text-lg">
             Please click the button to go back to the main page.
           </p>
-          <Link to={"/mainpage"}>
+          <Link to={"/"}>
             <button className=" mt-6 inline-flex items-center justify-center px-4 py-2 bg-slate-700 hover:bg-red-600  font-medium rounded-lg">
               Go to main page
             </button>

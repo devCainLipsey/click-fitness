@@ -4,7 +4,6 @@ import ScrollToHashElement from "./components/ScrollToHashElement";
 
 import RootLayout from "./pages/Root";
 import HomePage from "./pages/HomePage";
-import MainPage from "./pages/MainPage";
 import ProgramPage1 from "./pages/ProgramPage1";
 import ProgramPage2 from "./pages/ProgramPage2";
 import ProgramPage3 from "./pages/ProgramPage3";
@@ -28,7 +27,6 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       { path: "/", element: <HomePage /> },
-      { path: "/mainpage", element: <MainPage /> },
       { path: "/programpage1", element: <ProgramPage1 /> },
       { path: "/programpage2", element: <ProgramPage2 /> },
       { path: "/programpage3", element: <ProgramPage3 /> },

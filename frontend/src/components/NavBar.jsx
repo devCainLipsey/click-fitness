@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { FaDumbbell, FaBars } from "react-icons/fa";
 import { Link } from "react-scroll";
-import { Link as RouterLink } from "react-router-dom";
 
 const NavBar = () => {
   const [isSticky, setSticky] = useState(true); // Set initial state to true
@@ -36,13 +35,10 @@ const NavBar = () => {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center">
-          <RouterLink
-            to="/"
-            className="flex items-center text-white text-3xl font-bold cursor-pointer"
-          >
+          <div className="flex items-center text-white text-3xl font-bold">
             <FaDumbbell className="mr-2" size={40} />
             Click Fitness
-          </RouterLink>
+          </div>
         </div>
 
         {/* Hamburger Menu (shown for smaller screens) */}
