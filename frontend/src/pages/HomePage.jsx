@@ -98,10 +98,8 @@ const HomePage = () => {
         <div className="container mx-auto flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 md:pr-8">
             <div className="text-white text-center md:text-left">
-              <h1 className="text-6xl md:text-6xl font-bold">
-                About Click Fitness
-              </h1>
-              <p className="mt-4 text-lg sm:mb-6 md:text-xl">
+              <h1 className="text-6xl font-bold mb-20">About Click Fitness</h1>
+              <p className="text-lg sm:mb-6 md:text-xl">
                 Welcome to Click Fitness, your ultimate destination for building
                 a stronger, healthier you! Our app provides a comprehensive
                 platform designed to empower you on your fitness journey.
@@ -141,11 +139,12 @@ const HomePage = () => {
         id="plans"
       >
         {/* Content for the 4th section */}
-        <h1 className="text-6xl text-center font-bold pb-3 absolute top-0 left-0 right-0 mt-24">
+        <h1 className="text-6xl text-center font-bold pb-3 absolute xl:top-0 -top-10 left-0 right-0 mt-24">
           Memberships
         </h1>
-        <div className="flex flex-col items-center">
-          <div className="flex justify-center space-x-8">
+        <div className="flex flex-col items-center mt-32">
+          {/* Updated classes for responsive design */}
+          <div className="xl:flex flex-col sm:flex-row xl:items-center xl:space-x-8">
             <MembershipCard {...basicMembershipCardData} />
             <MembershipCard {...premiumMembershipCardData} />
             <MembershipCard {...vipMembershipCardData} />

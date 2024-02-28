@@ -91,84 +91,33 @@ const ImageSlider = () => {
 
   return (
     <Slider {...settings}>
-      <div className="relative">
-        <div className="mb-4">
-          <img src={mp3} alt="Program 1" className="h-96 object-cover" />
-        </div>
-        <div className="bg-black">
-          <h3 className="text-4xl font-bold">Advanced Strength</h3>
-          <Link to="/programpage1">
-            <button className="mt-6 bg-slate-700 hover:bg-red-600 text-white text-xl font-bold py-3 px-6 rounded transition duration-200">
-              Details
-            </button>
+      {/* Each slide */}
+      {[
+        { img: mp3, title: "Advanced Strength", link: "/programpage1" },
+        { img: mp4, title: "Squat Mastery", link: "/programpage2" },
+        { img: mp5, title: "Cable Training", link: "/programpage3" },
+        { img: mp6, title: "Bodyweight Strength", link: "/programpage4" },
+        {
+          img: mp7,
+          title: "Outdoor Adventure Training",
+          link: "/programpage5",
+        },
+        { img: mp8, title: "Personal Trainer", link: "/programpage6" },
+      ].map((program, index) => (
+        <div key={index} className="relative h-96">
+          <Link to={program.link}>
+            <img
+              src={program.img}
+              alt={program.title}
+              className="w-full h-full object-cover opacity-100 hover:opacity-30 transition-opacity duration-100"
+              style={{ height: "100%" }}
+            />
           </Link>
+          <div className="bg-black text-center mt-5">
+            <h3 className="text-4xl font-bold">{program.title}</h3>
+          </div>
         </div>
-      </div>
-      <div className="relative">
-        <div className="mb-4">
-          <img src={mp4} alt="Program 2" className="h-96 object-cover" />
-        </div>
-        <div className=" bg-black">
-          <h3 className="text-4xl font-bold">Squat Mastery</h3>
-          <Link to="/programpage2">
-            <button className="mt-6 bg-slate-700 hover:bg-red-600 text-white text-xl font-bold py-3 px-6 rounded transition duration-200">
-              Details
-            </button>
-          </Link>
-        </div>
-      </div>
-      <div className="relative">
-        <div className="mb-4">
-          <img src={mp5} alt="Program 3" className="h-96 object-cover" />
-        </div>
-        <div className="bg-black ">
-          <h3 className="text-4xl font-bold">Cable Training</h3>
-          <Link to="/programpage3">
-            <button className="mt-6 bg-slate-700 hover:bg-red-600 text-white text-xl font-bold py-3 px-6 rounded transition duration-200">
-              Details
-            </button>
-          </Link>
-        </div>
-      </div>
-      <div className="relative">
-        <div className="mb-4">
-          <img src={mp6} alt="Program 4" className="h-96 object-cover" />
-        </div>
-        <div className="bg-black ">
-          <h3 className="text-4xl font-bold">Bodyweight Strength</h3>
-          <Link to="/programpage4">
-            <button className="mt-6 bg-slate-700 hover:bg-red-600 text-white text-xl font-bold py-3 px-6 rounded transition duration-200">
-              Details
-            </button>
-          </Link>
-        </div>
-      </div>
-      <div className="relative">
-        <div className="mb-4">
-          <img src={mp7} alt="Program 5" className="h-96 object-cover" />
-        </div>
-        <div className="bg-black ">
-          <h3 className="text-4xl font-bold">Outdoor Adventure Training</h3>
-          <Link to="/programpage5">
-            <button className="mt-6 bg-slate-700 hover:bg-red-600 text-white text-xl font-bold py-3 px-6 rounded transition duration-200">
-              Details
-            </button>
-          </Link>
-        </div>
-      </div>
-      <div className="relative">
-        <div className="mb-4">
-          <img src={mp8} alt="Program 6" className="h-96 object-cover" />
-        </div>
-        <div className="bg-black ">
-          <h3 className="text-4xl font-bold">Personal Trainer</h3>
-          <Link to="/programpage6">
-            <button className="mt-6 bg-slate-700 hover:bg-red-600 text-white text-xl font-bold py-3 px-6 rounded transition duration-200">
-              Details
-            </button>
-          </Link>
-        </div>
-      </div>
+      ))}
     </Slider>
   );
 };
