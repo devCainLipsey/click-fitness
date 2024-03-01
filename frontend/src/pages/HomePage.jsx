@@ -4,9 +4,7 @@ import NavBar from "../components/NavBar";
 import ImageSlider from "../components/ImageSlider";
 import MembershipCard from "../components/MembershipCard";
 import ContactForm from "../components/ContactForm";
-import mp1 from "../assets/MainPageImages/Section1/mp1.jpg";
-import mp2 from "../assets/MainPageImages/Section2/mp2.jpg";
-import mp9 from "../assets/MainPageImages/Section4/mp9.jpg";
+import SocialMediaIcons from "../components/SocialMediaIcons";
 
 const HomePage = () => {
   const basicMembershipCardData = {
@@ -56,7 +54,7 @@ const HomePage = () => {
         <div
           className="absolute inset-0"
           style={{
-            backgroundImage: `url(${mp1}), linear-gradient(rgba(0, 0, 0, 10), rgba(0, 0, 0, 10))`,
+            backgroundImage: `url("https://images.unsplash.com/photo-1534367507873-d2d7e24c797f?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"), linear-gradient(rgba(0, 0, 0, 10), rgba(0, 0, 0, 10))`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -114,7 +112,7 @@ const HomePage = () => {
           </div>
           <div className="md:w-1/2">
             <img
-              src={mp2}
+              src="https://images.unsplash.com/photo-1591227174835-d3705c881c90?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="About Click Fitness"
               className="w-full h-full object-cover"
             />
@@ -127,7 +125,7 @@ const HomePage = () => {
       >
         {/* Content for the 3rd section */}
         <div className="container mx-auto text-center">
-          <h1 className="text-6xl font-bold pb-3 mt-24 absolute top-0 left-0 right-0">
+          <h1 className="text-6xl font-bold pb-3 absolute top-20 left-0 right-0">
             Programs
           </h1>
           <ImageSlider />
@@ -154,12 +152,16 @@ const HomePage = () => {
 
       <section
         className="flex justify-center items-center min-h-screen py-12 border-t-4 border-red-500 bg-black"
-        style={{ backgroundImage: `url(${mp9})`, backgroundSize: "cover" }}
+        style={{
+          backgroundImage: `url("https://images.unsplash.com/photo-1534258936925-c58bed479fcb?q=80&w=2531&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`,
+          backgroundSize: "cover",
+        }}
         id="contact"
       >
         {/* Content for the 5th section */}
         <div className="container mx-auto">
           <ContactForm />
+          <SocialMediaIcons />
         </div>
       </section>
     </>

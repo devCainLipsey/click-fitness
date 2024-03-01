@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import MembershipTable from "../components/MembershipTable";
 import ConfirmOverlayModule from "../components/ConfirmOverlayModule";
 
@@ -47,16 +47,21 @@ const VIPMembershipPage = () => {
     ),
   };
 
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+  }, []); // Empty dependency array ensures this effect runs only once, similar to componentDidMount
+
   return (
     <section className="min-h-screen py-12 border-t-2 border-red-500 bg-black relative flex flex-col items-center">
-      <h1 className="text-6xl text-center font-bold pb-3 mt-6">
+      <h1 className="text-6xl text-center font-bold pb-3 mb-32">
         <span className="text-yellow-400">VIP</span> Membership
       </h1>
       <div className="flex-grow flex justify-center items-center">
         <MembershipTable {...membershipData} />
       </div>
       <button
-        className="mb-32 border-2 border-red-500 bg-black text-white  text-2xl font-bold py-4 px-8 rounded-xl hover:bg-red-700 hover:border-gray-950 transition duration-200"
+        className="mt-24  border-2 border-red-500 bg-black text-white  text-2xl font-bold py-4 px-8 rounded-xl hover:bg-red-700 hover:border-gray-950 transition duration-200"
         onClick={() => setShowConfirmation(true)}
       >
         Buy VIP Plan

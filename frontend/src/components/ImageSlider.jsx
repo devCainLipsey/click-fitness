@@ -2,12 +2,6 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import mp3 from "../assets/MainPageImages/Section3/mp3.jpg";
-import mp4 from "../assets/MainPageImages/Section3/mp4.jpg";
-import mp5 from "../assets/MainPageImages/Section3/mp5.jpg";
-import mp6 from "../assets/MainPageImages/Section3/mp6.jpg";
-import mp7 from "../assets/MainPageImages/Section3/mp7.jpg";
-import mp8 from "../assets/MainPageImages/Section3/mp8.jpg";
 import { Link } from "react-router-dom";
 
 // SVG icon for previous arrow
@@ -93,23 +87,43 @@ const ImageSlider = () => {
     <Slider {...settings}>
       {/* Each slide */}
       {[
-        { img: mp3, title: "Advanced Strength", link: "/programpage1" },
-        { img: mp4, title: "Squat Mastery", link: "/programpage2" },
-        { img: mp5, title: "Cable Training", link: "/programpage3" },
-        { img: mp6, title: "Bodyweight Strength", link: "/programpage4" },
         {
-          img: mp7,
+          img: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          title: "Advanced Strength",
+          link: "/programpage1",
+        },
+        {
+          img: "https://images.unsplash.com/photo-1574680178050-55c6a6a96e0a?q=80&w=2369&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          title: "Squat Mastery",
+          link: "/programpage2",
+        },
+        {
+          img: "https://images.unsplash.com/photo-1597452485677-d661670d9640?q=80&w=2572&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          title: "Cable Training",
+          link: "/programpage3",
+        },
+        {
+          img: "https://images.unsplash.com/photo-1598971457999-ca4ef48a9a71?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          title: "Bodyweight Strength",
+          link: "/programpage4",
+        },
+        {
+          img: "https://images.unsplash.com/photo-1599115086667-c134c829edb6?q=80&w=2645&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           title: "Outdoor Adventure Training",
           link: "/programpage5",
         },
-        { img: mp8, title: "Personal Trainer", link: "/programpage6" },
+        {
+          img: "https://images.unsplash.com/photo-1652363723312-83cbc77e2d34?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          title: "Personal Trainer",
+          link: "/programpage6",
+        },
       ].map((program, index) => (
         <div key={index} className="relative h-96">
           <Link to={program.link}>
             <img
               src={program.img}
               alt={program.title}
-              className="w-full h-full object-cover opacity-100 hover:opacity-30 transition-opacity duration-100"
+              className="w-full h-full object-cover opacity-100 md:hover:opacity-30 md:transition-opacity md:duration-100"
               style={{ height: "100%" }}
             />
           </Link>

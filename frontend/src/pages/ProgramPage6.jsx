@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import mp8 from "../assets/MainPageImages/Section3/mp8.jpg";
-import { Link } from "react-router-dom";
 import ConfirmOverlayModule from "../components/ConfirmOverlayModule";
 
 const PlanPage6 = () => {
@@ -22,7 +20,9 @@ const PlanPage6 = () => {
     <>
       <div
         className="h-screen bg-cover bg-center flex justify-center items-center"
-        style={{ backgroundImage: `url(${mp8})` }}
+        style={{
+          backgroundImage: `url("https://images.unsplash.com/photo-1652363723312-83cbc77e2d34?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`,
+        }}
       >
         <div className="bg-black bg-opacity-70 p-8 rounded-lg border-2 border-red-500 text-center">
           <h1 className="text-5xl font-bold text-white mb-4">
