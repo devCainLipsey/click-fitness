@@ -7,7 +7,7 @@ const ErrorPage = () => {
       <main className="flex flex-col items-center justify-center h-screen text-center bg-gradient-to-b from-black to-gray-700">
         <div className="bg-black bg-opacity-50 rounded-lg px-8 py-6 text-white text-center border-2 border-red-500">
           <h1 className="text-4xl mb-4">
-            An <span className="text-red-500">Error</span> Occurred!
+            An <span className="text-red-500">Errors</span> Occurred!
           </h1>
           <p className="text-lg">Could not find this page.</p>
           <p className="text-lg">
